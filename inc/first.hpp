@@ -1,16 +1,22 @@
 #ifndef _FIRST_HPP_
 #define _FIRST_HPP_
 
-class InitFirst
-{
+namespace First {
+
+constexpr int xlimit = 20;
+constexpr int ylimit = 30;
+constexpr int zlimit = 0;
+
+class InitFirst {
 private:
-    /* data */
+  /* data */
 public:
-    InitFirst(/* args */);
-    ~InitFirst();
-    int FindValues(int x, int y, int z);
-    int FindAndThrow(int x, int y, int z);
+  InitFirst(/* args */) = default;
+  ~InitFirst() = default;
+  auto static FindValues(int x, int y, int z) -> int;
+  auto static FindAndThrow(int x, int y, int z) -> int;
 };
 
+} // namespace First
 
 #endif /* _FIRST_HPP_ */
