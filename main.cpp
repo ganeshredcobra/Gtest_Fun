@@ -1,14 +1,12 @@
-#include <iostream>
 #include "first.hpp"
+#include <iostream>
 
+auto main() ->int {
 
-int main()
-{
-    InitFirst first_itf;    
+  First::InitFirst first_itf;
 
-    auto return_value = first_itf.FindValues(10,20,0);
-    std::cout << return_value << '\n';   
-    
+  auto return_value = first_itf.FindValues(10, 20, 0);
+  std::cout << return_value << '\n';
 
-    return 0;
+  return 0;
 }
