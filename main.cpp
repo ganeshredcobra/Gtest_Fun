@@ -1,4 +1,4 @@
-#include "first.hpp"
+#include "inc/first.hpp"
 #include <iostream>
 
 auto main() ->int {
