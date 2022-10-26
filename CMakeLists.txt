@@ -4,8 +4,9 @@ set(CMAKE_CXX_REQUIRED ON)
 
 project(Application)
 
-add_executable(Application main.cpp src/first.cpp)
-target_include_directories(Application PUBLIC inc)
+set(sources main.cpp ${PROJECT_SOURCE_DIR}/src/first.cpp)
+
+add_executable(Application ${sources})
+target_include_directories(Application PRIVATE ${PROJECT_SOURCE_DIR}/inc)
 
 add_subdirectory(test)
-
