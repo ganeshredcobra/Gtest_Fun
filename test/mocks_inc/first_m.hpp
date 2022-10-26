@@ -1,7 +1,7 @@
 #ifndef _MOCKS_INC_FIRST_HPP_
 #define _MOCKS_INC_FIRST_HPP_
 
-#include <gmock/gmock.h>
+#include "gmock/gmock.h"
 
 namespace First_test {
 
